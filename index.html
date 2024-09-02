@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment1</title>
+    <style>
+      #head {
+        background-color: rgb(4, 158, 4);
+        height: 100px;
+      }
+      h1{
+        text-align: center;
+        color: white;
+        padding-top: 30px;
+      }
+
+      #navbar{
+        margin-top: 10px;
+      }
+
+      #webpage-content{
+      margin-top: 20px;
+      max-width: 50%;
+    }
+
+    #webpage-con{
+      margin-top: 50px;
+    }
+
+      #table-info{
+      margin-top: 70px;
+    }
+
+      table,
+      td{
+        border: 1px solid black; 
+        border-collapse: collapse;
+        padding: 10px;
+        text-align: center;
+      }
+
+      #contact{
+        margin-top: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="head">
+      <h1>My first Webpage</h1>
+    </div>
+
+    <div id="navbar">
+      <nav>
+        <a href="#webpage-content"> Webpage contents</a>
+        <a href="#table-info"> Infornation Table</a>
+        <a href="#form-contact"> Contact Form</a>
+      </nav>
+    </div>
+
+    <section id="webpage-content">
+      <div >
+        <div id="image-wrap">
+          <img src="Ass1.jpeg" style="width: 700px; height: 360px;">
+        </div>
+        <p style="text-align: center;">This is a sample paragraph describing the content of the webpage, It explains the purpose of the page <br> and provide some basic information about what users can expect to find.</p>
+      </div>
+
+        <a href="https://www.techyjaunt.com/" target="_blank">Visit TechyJaunt</a>
+
+      <div id="webpage-con">
+        <h2>Webpage Contents</h2>
+        <ul>
+          <li>Introduction</li>
+          <li>Table of Infornation</li>
+          <li>Contact Form</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="table-info">
+      <h2> Information Table</h2>
+      <div>
+        <table>
+          <thhead>
+            <td>Item</td>
+            <td>Description</td>
+            <td>Quantity</td>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Pens</td>
+              <td>Blue Ink Pens</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>Notebooks</td>
+              <td>Spiral-bound Notebooks</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Markers</td>
+              <td>Permanet Markers</td>
+              <td>2</td>
+            </tr>    
+          </tbody>  
+        </table>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div>
+        <h2>Contact Form</h2>
+        <form>
+          <p>
+            <label for="name">Name:</label>
+            <input name="name" type="text">
+          </p>
+          <p>
+            <label for="email">Email:</label>
+            <input name="email" type="email">
+          </p>
+          <p>
+            <label for="password">Name:</label>
+            <input name="Password" type="password">
+          </p>
+          
+          <div>
+           <p>
+            Gender
+            <input name="male" type="radio">
+            <label for="male">Male</label>
+            <input name="male" type="radio" checked>
+            <label for="female">Female</label>
+           </p> 
+          </div>
+          <div>
+            <p>
+              <label for="subscribe">Subscribe:</label>
+              <input name="subscribe" type="checkbox">
+              Yes, I want to subscribe
+            </p>
+          </div>
+
+          <p>
+          <label for="quantity">Number of Items:</label>
+          <input name="quantity" type="number">  
+          </p>  
+
+          <p>
+            <label for="date">Date:</label>
+            <input type="date"><br>
+          </p>
+
+          <label for="message">Message:</label><br>
+          <textarea name="message" cols="50" rows="7"></textarea>             
+        </form>
+      </div>
+    </section>
+
+    <div>
+      <p>
+        <button>submit</button>
+      </p>
+    </div>
+  </body>
+</html>
